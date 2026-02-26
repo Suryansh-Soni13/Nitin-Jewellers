@@ -1,0 +1,417 @@
+/* =======================================================
+   COLLECTION HUB (MODERN LUXURY)
+======================================================== */
+.hub-main {
+    background-color: var(--bg-white);
+    padding: 130px 0 70px;
+    /* was 180px — reduced top padding */
+    min-height: 80vh;
+}
+
+.hub-header {
+    text-align: center;
+    margin-bottom: 44px;
+    /* was 80px */
+}
+
+.hub-header .subtitle {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hub-header h1 {
+    font-size: 3.5rem;
+    color: var(--text-dark);
+}
+
+.hub-header h1 i {
+    color: var(--gold-primary);
+}
+
+.hub-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 categories */
+    gap: 24px;
+}
+
+.category-card {
+    display: block;
+    background: var(--bg-offwhite);
+    border: 1px solid var(--border-light);
+    text-align: center;
+    transition: var(--transition);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.category-img {
+    width: 100%;
+    aspect-ratio: 3/2.8;
+    /* shorter — was 4/5 (very tall portrait) */
+    overflow: hidden;
+}
+
+.category-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.category-card:hover .category-img img {
+    transform: scale(1.05);
+}
+
+.category-content {
+    padding: 18px 16px;
+    /* was 30px 20px */
+    background: var(--bg-white);
+    border-top: 1px solid var(--border-light);
+    transition: var(--transition);
+}
+
+.category-card:hover .category-content {
+    background: var(--gold-primary);
+}
+
+.category-content h2 {
+    font-size: 1.4rem;
+    /* was 2rem — too large */
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    transition: var(--transition);
+}
+
+.category-card:hover .category-content h2 {
+    color: #fff;
+}
+
+.category-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.category-card:hover .category-link {
+    color: #fff;
+}
+
+
+/* =======================================================
+   VINTAGE CATEGORY PAGES (90s STYLE CATALOG)
+======================================================== */
+.vintage-main {
+    background-color: #f4edd8;
+    /* Old beige paper background */
+    background-image: linear-gradient(rgba(244, 237, 216, 0.9), rgba(244, 237, 216, 0.9)), url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.08"/></svg>');
+    padding: 150px 0 80px;
+    min-height: 100vh;
+    font-family: 'Playfair Display', "Times New Roman", Times, serif;
+    color: #3b312b;
+}
+
+.vintage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #faf7ef;
+    border: 1px solid #c9b99e;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    /* slight classic shadow */
+    padding: 60px 5vw;
+}
+
+.vintage-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vintage-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #4a3c31;
+    margin-bottom: 15px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.vintage-subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #6a5a4a;
+    letter-spacing: 0.05em;
+}
+
+.vintage-divider {
+    width: 120px;
+    height: 4px;
+    border-top: 1px solid #a38f71;
+    border-bottom: 1px solid #a38f71;
+    margin: 25px auto 0;
+}
+
+.vintage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.vintage-item {
+    background: #fffdf8;
+    border: 1px solid #e0d5c1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    /* Old-school shadow */
+    transition: transform 0.3s ease;
+}
+
+.vintage-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Enhanced Picture Frame for Vintage Catalogue */
+.vintage-img-frame {
+    /* Outer Box */
+    border: 1px solid #c8b592;
+    padding: 10px;
+    background: #faf7ef;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+    /* Subtle inner shadow */
+}
+
+.vintage-img-frame::after {
+    /* Inner double line - Thin gold border */
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border: 1px solid #d4af37;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.vintage-img-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+    display: block;
+    filter: sepia(0.15) contrast(1.05);
+    /* very slight vintage photo feel */
+}
+
+/* Category Specific Overrides */
+.silver-container {
+    background-color: #f6f8f9;
+    /* cool tint for silver */
+    border-color: #b5c2cb;
+}
+
+.silver-main {
+    background-color: #e5ebeb;
+}
+
+.diamond-container {
+    background-color: #fdfefe;
+    /* bright pure for diamond */
+    border-color: #e2e8f0;
+}
+
+.diamond-main {
+    background-color: #f4f6f9;
+}
+
+
+.item-details h3 {
+    font-size: 1.3rem;
+    color: #3b312b;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    font-family: 'Cinzel', serif;
+}
+
+.item-desc {
+    font-size: 0.95rem;
+    color: #554e48;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+    min-height: 45px;
+}
+
+.item-id {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    /* Catalog Reference Style */
+    font-size: 0.85rem;
+    color: #887a6d;
+    font-weight: bold;
+    border-top: 1px dashed #d4c4a8;
+    padding-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.vintage-footer {
+    text-align: center;
+    border-top: 2px double #c9b99e;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+.vintage-footer p {
+    font-size: 0.9rem;
+    color: #6a5a4a;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+}
+
+.back-to-hub {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #4a3c31;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-to-hub:hover {
+    color: var(--gold-primary);
+}
+
+
+/* =======================================================
+   MOBILE RESPONSIVENESS
+======================================================== */
+
+@media (max-width: 1024px) {
+    .hub-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2×2 grid on tablet */
+        gap: 20px;
+    }
+
+    .vintage-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hub Adjustments */
+    .hub-main {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hub-header {
+        margin-bottom: 28px;
+    }
+
+    .hub-header h1 {
+        font-size: 2rem;
+    }
+
+    /* 2 columns on mobile — compact, not one huge column */
+    .hub-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .category-img {
+        aspect-ratio: 1/1;
+        /* square images on mobile = compact */
+    }
+
+    .category-img img {
+        height: 100%;
+    }
+
+    .category-content {
+        padding: 12px 10px;
+    }
+
+    .category-content h2 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .category-link {
+        font-size: 0.68rem;
+    }
+
+    /* Vintage Page Adjustments */
+    .vintage-main {
+        padding: 100px 10px 40px;
+    }
+
+    .vintage-container {
+        padding: 40px 20px;
+    }
+
+    .vintage-header {
+        margin-bottom: 40px;
+    }
+
+    .vintage-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .vintage-subtitle {
+        font-size: 1rem;
+    }
+
+    .vintage-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout for mobile */
+        gap: 40px;
+    }
+
+    .vintage-item {
+        padding: 25px 20px;
+    }
+
+    .vintage-img-frame img {
+        aspect-ratio: auto;
+        min-height: 350px;
+        /* Large readable images on mobile */
+    }
+
+    .item-desc {
+        font-size: 1.05rem;
+        /* Highly readable */
+    }
+}

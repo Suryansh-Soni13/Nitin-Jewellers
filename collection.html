@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITIN JEWELLERS | Collections</title>
+    <meta name="description" content="Explore NITIN JEWELLERS exclusive collections.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collection.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-icon">NJ</span>
+                <span class="brand-text">NITIN JEWELLERS</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <button class="nav-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html#about" class="mobile-link">About</a>
+            <a href="collection.html" class="mobile-link">Collection</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <span class="logo-icon" style="font-size: 2rem; width: 50px; height: 50px; margin-bottom: 10px;">NJ</span>
+            <span class="brand-text">NITIN JEWELLERS</span>
+        </div>
+    </div>
+
+    <!-- Collection Hub Content (Modern Luxury) -->
+    <main class="hub-main">
+        <div class="container">
+            <header class="hub-header reveal active">
+                <span class="subtitle">Explore The Archives</span>
+                <h1 class="serif">Our <i>Collections</i></h1>
+                <div class="divider"></div>
+                <p class="hub-desc">Select a category to view our meticulously crafted heritage pieces.</p>
+            </header>
+
+            <div class="hub-grid reveal">
+                <!-- Gold Category -->
+                <a href="gold.html" class="category-card">
+                    <div class="category-img">
+                        <img src="images/3.jpg" alt="Gold Collection">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="serif">Gold</h2>
+                        <span class="category-link">View Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Silver Category -->
+                <a href="silver.html" class="category-card">
+                    <div class="category-img">
+                        <img src="images/5.jpg" alt="Silver Collection">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="serif">Silver</h2>
+                        <span class="category-link">View Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Diamond Category -->
+                <a href="diamond.html" class="category-card">
+                    <div class="category-img">
+                        <img src="images/7.jpg" alt="Diamond Collection">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="serif">Diamond</h2>
+                        <span class="category-link">View Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Coins Category -->
+                <a href="coins.html" class="category-card">
+                    <div class="category-img">
+                        <img src="images/10.jpg" alt="Gold & Silver Coins">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="serif">Coins</h2>
+                        <span class="category-link">View Collection &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="reveal">
+        <div class="container footer-grid">
+            <div class="footer-logo-col">
+                <a href="index.html" class="brand-logo footer-brand">
+                    <span class="logo-icon">NJ</span>
+                    <span class="brand-text">NITIN JEWELLERS</span>
+                </a>
+                <p>Vadodara's prestigious destination for BIS Hallmarked 22K gold artistry since 2005.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Boutique</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Hospitality</h4>
+                <ul>
+                    <li><a href="index.html#contact">Private Viewing</a></li>
+                    <li><a href="index.html#contact">Bridal Styling</a></li>
+                    <li><a href="index.html#contact">Investment Vault</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 NITIN JEWELLERS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
